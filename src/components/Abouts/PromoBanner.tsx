@@ -1,6 +1,7 @@
 import Text from "../common/text";
 import PromoImg from "@/assets/about/PromoImg.png";
 import { Button } from "../ui/button";
+import { Link } from "react-router";
 
 const Promotion = () => {
   return (
@@ -36,7 +37,7 @@ const Promotion = () => {
 
             <div className="pt-1 sm:pt-2">
               <Button className="bg-[#DF6951] hover:bg-[#c3533d] px-6 sm:px-8 md:px-10 py-5 sm:py-6 md:py-7 text-sm sm:text-base md:text-lg font-semibold rounded-lg sm:rounded-xl shadow-md hover:shadow-lg sm:shadow-lg sm:hover:shadow-xl transition-all duration-300 transform hover:scale-105">
-                Explore Tours
+                <Link to="/tour-packages">Explore Tours</Link>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className="h-4 w-4 sm:h-5 sm:w-5 ml-2"
