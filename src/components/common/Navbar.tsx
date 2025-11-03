@@ -105,17 +105,17 @@ export function Navbar() {
             className="bg-[#DF6951] hover:bg-[#c3533d] max-md:hidden ml-2"
             variant="default"
           >
-            Get in Touch
+            <Link to="/about">Get in Touch</Link>
           </Button>
 
           {/* Mobile Navigation */}
           <div className="flex md:hidden items-center gap-4">
-            <Button
+            {/* <Button
               className="bg-[#DF6951] hover:bg-[#c3533d] hidden sm:block"
               variant="default"
             >
               Get in Touch
-            </Button>
+            </Button> */}
 
             <Sheet open={isMobileMenuOpen} onOpenChange={setIsMobileMenuOpen}>
               <SheetTrigger aria-label="Open menu">

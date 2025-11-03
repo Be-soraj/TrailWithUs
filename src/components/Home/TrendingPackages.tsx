@@ -1,3 +1,4 @@
+import { Link } from "react-router";
 import Text from "../common/text";
 import { Button } from "../ui/button";
 import { Card, CardContent } from "../ui/card";
@@ -176,7 +177,7 @@ const TrendingPackages = () => {
 
               <div className="px-6">
                 <Button className="w-full py-3 bg-[#DF6951] text-white rounded-md hover:bg-[#c9563f] transition-colors duration-300 font-medium">
-                  Explore Now
+                  <Link to="/tour-packages">Explore Now </Link>
                 </Button>
               </div>
             </div>

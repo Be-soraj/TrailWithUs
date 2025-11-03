@@ -8,7 +8,7 @@ import Services from "@/components/Home/Services";
 import Banner from "@/components/Home/banner";
 import Promotion from "@/components/Home/Promotion";
 import ViewPackages from "@/components/Home/ViewPackages";
-import TrendingPackages from "@/components/Home/TrendingPackages";
+// import TrendingPackages from "@/components/Home/TrendingPackages";
 import ClientFeedback from "@/components/Home/ClientFeedback";
 
 const Home = () => {
@@ -59,7 +59,7 @@ const Home = () => {
         <Banner />
         <Promotion />
         <ViewPackages />
-        <TrendingPackages />
+        {/* <TrendingPackages /> */}
         <ClientFeedback />
       </div>
     </div>

@@ -2,6 +2,7 @@ import Text from "../common/text";
 import Paresh from "@/assets/home/parise.png";
 import { Button } from "../ui/button";
 import { CustomCarousel } from "@/components/common/CustomCarousel";
+import { Link } from "react-router";
 
 const Promotion = () => {
   return (
@@ -36,7 +37,7 @@ const Promotion = () => {
 
             <div className="pt-2">
               <Button className="bg-[#DF6951] hover:bg-[#c3533d] px-8 py-6 text-lg font-medium rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
-                Get in Touch
+                <Link to="/tour-packages">Get Tour</Link>
               </Button>
             </div>
 
