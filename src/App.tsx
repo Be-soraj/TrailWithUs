@@ -11,6 +11,7 @@ import Home from "./pages/Home/home.tsx";
 import TourPackages from "./pages/Services's/TourPackages.tsx";
 import TourInformation from "./pages/Services's/TourInformation.tsx";
 import ComingSoon from "./components/common/ComingSoonError.tsx";
+import PaymentForm from "./pages/esewa/PaymentForm.tsx";
 
 const router = createBrowserRouter([
   {
@@ -28,6 +29,8 @@ const router = createBrowserRouter([
         path: "tour-packages/tour-information/:id",
         element: <TourInformation />,
       },
+      { path: "/PaymentForm", element: <PaymentForm /> },
+      { path: "/paymentsuccess", element: <></> },
     ],
   },
   {
