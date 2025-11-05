@@ -11,6 +11,7 @@ import Home from "./pages/Home/home.tsx";
 import TourPackages from "./pages/Services's/TourPackages.tsx";
 import TourInformation from "./pages/Services's/TourInformation.tsx";
 import ComingSoon from "./components/common/ComingSoonError.tsx";
+import ContactUs from "./pages/ContactUs/ContactUs.tsx";
 
 const router = createBrowserRouter([
   {
@@ -21,7 +22,7 @@ const router = createBrowserRouter([
       { index: true, element: <Navigate to="/home" replace /> },
       { path: "home", element: <Home /> },
       { path: "about", element: <About /> },
-
+      { path: "ContactUs", element: <ContactUs /> },
       //packages
       { path: "tour-packages", element: <TourPackages /> },
       {

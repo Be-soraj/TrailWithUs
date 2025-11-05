@@ -22,8 +22,8 @@ const navLinks = [
     label: "Services",
     subLinks: [
       { path: "/tour-packages", label: "Tour Packages" },
-      { path: "/musical-events", label: "Musical Events" },
-      { path: "/build-package", label: "Build Package", isHighlighted: true },
+      // { path: "/musical-events", label: "Musical Events" },
+      // { path: "/build-package", label: "Build Package", isHighlighted: true },
     ],
   },
   { path: "/upcoming-packages", label: "Upcoming Packages" },
@@ -75,28 +75,28 @@ export function Navbar() {
                       >
                         Tour Packages
                       </Link>
-                      <Link
+                      {/* <Link
                         className="text-white hover:bg-[#839bba]  px-4 py-2 rounded-md transition-colors text-center truncate"
                         to={"/musical-events"}
                       >
                         Musical Events
-                      </Link>
-                      <Link
+                      </Link> */}
+                      {/* <Link
                         className="text-white hover:bg-[#839bba]  px-4 py-2 rounded-md transition-colors text-center truncate font-medium"
                         to={"/build-package"}
                       >
                         Build Package
-                      </Link>
+                      </Link> */}
                     </NavigationMenuContent>
                   </NavigationMenuItem>
-                  <NavigationMenuItem>
+                  {/* <NavigationMenuItem>
                     <Link
                       to="/Upcomming Packages"
                       className={navigationMenuTriggerStyle()}
                     >
                       Upcomming Packages
                     </Link>
-                  </NavigationMenuItem>
+                  </NavigationMenuItem> */}
                 </NavigationMenuList>
               </NavigationMenu>
             </nav>
@@ -105,17 +105,17 @@ export function Navbar() {
             className="bg-[#DF6951] hover:bg-[#c3533d] max-md:hidden ml-2"
             variant="default"
           >
-            <Link to="/about">Get in Touch</Link>
+            <Link to="/ContactUs">Get in Touch</Link>
           </Button>
 
           {/* Mobile Navigation */}
           <div className="flex md:hidden items-center gap-4">
-            {/* <Button
+            <Button
               className="bg-[#DF6951] hover:bg-[#c3533d] hidden sm:block"
               variant="default"
             >
-              Get in Touch
-            </Button> */}
+              <Link to="/ContactUs">Get in Touch</Link>
+            </Button>
 
             <Sheet open={isMobileMenuOpen} onOpenChange={setIsMobileMenuOpen}>
               <SheetTrigger aria-label="Open menu">
